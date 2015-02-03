@@ -1,0 +1,2034 @@
+2015/01/23 06:00:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\blog\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/gii
+---
+2015/01/23 06:46:27 [error] [php] include(NareshmodelGenerator.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\yii\framework\YiiBase.php(204): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CWebApplication.php(332): createComponent()
+#2 D:\xampp\yii\framework\web\CWebApplication.php(338): CWebApplication->createController()
+#3 D:\xampp\yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#4 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\blog\index.php(11): CWebApplication->run()
+REQUEST_URI=/blog/index.php/gii/nareshmodel
+2015/01/23 07:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/nareshmodel".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/nareshmodel')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\blog\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/gii/nareshmodel
+HTTP_REFERER=http://localhost/blog/index.php/gii/default/index
+---
+2015/01/23 08:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/
+---
+2015/01/23 08:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/notes/
+---
+2015/01/23 08:41:47 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.rememberMe" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\yii\framework\web\helpers\CHtml.php(2255): CComponent->__get('rememberMe')
+#1 D:\xampp\yii\framework\web\helpers\CHtml.php(1506): CHtml::resolveValue(Object(LoginForm), 'rememberMe')
+#2 D:\xampp\yii\framework\web\widgets\CActiveForm.php(747): CHtml::activeCheckBox(Object(LoginForm), 'rememberMe', Array)
+#3 D:\xampp\htdocs\notes\protected\views\login\login.php(36): CActiveForm->checkBox(Object(LoginForm), 'rememberMe')
+#4 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(41): CController->render('login', Array)
+#9 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#10 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/notes/
+---
+2015/01/23 08:45:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.{{user}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{user}}`.
+2015/01/23 08:45:05 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in D:\xampp\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\xampp\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\xampp\htdocs\notes\protected\models\User.php(19): CActiveRecord::model('User')
+#2 D:\xampp\htdocs\notes\protected\components\UserIdentity.php(8): User::model()
+#3 D:\xampp\htdocs\notes\protected\models\LoginForm.php(28): UserIdentity->authenticate()
+#4 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(37): LoginForm->login()
+#5 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#6 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/
+HTTP_REFERER=http://localhost/notes/
+---
+2015/01/23 08:49:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.{{user}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{user}}`.
+2015/01/23 08:49:43 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in D:\xampp\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\xampp\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\xampp\htdocs\notes\protected\models\User.php(19): CActiveRecord::model('User')
+#2 D:\xampp\htdocs\notes\protected\components\UserIdentity.php(8): User::model()
+#3 D:\xampp\htdocs\notes\protected\models\LoginForm.php(28): UserIdentity->authenticate()
+#4 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(37): LoginForm->login()
+#5 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#6 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/
+HTTP_REFERER=http://localhost/notes/
+---
+2015/01/23 08:51:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.{{users}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{users}}`.
+2015/01/23 08:51:29 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in D:\xampp\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\xampp\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\xampp\htdocs\notes\protected\models\User.php(7): CActiveRecord::model('User')
+#2 D:\xampp\htdocs\notes\protected\components\UserIdentity.php(8): User::model()
+#3 D:\xampp\htdocs\notes\protected\models\LoginForm.php(28): UserIdentity->authenticate()
+#4 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(37): LoginForm->login()
+#5 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#6 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/notes/
+HTTP_REFERER=http://localhost/notes/
+---
+2015/01/23 08:57:56 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "getErrors".' in D:\xampp\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\xampp\yii\framework\web\helpers\CHtml.php(1765): CComponent->__call('getErrors', Array)
+#1 D:\xampp\yii\framework\web\helpers\CHtml.php(1765): CActiveForm->getErrors()
+#2 D:\xampp\htdocs\notes\protected\views\login\login.php(17): CHtml::errorSummary(Object(CActiveForm))
+#3 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(41): CController->render('login', Array)
+#8 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#9 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/notes/
+HTTP_REFERER=http://localhost/notes/
+---
+2015/01/23 08:58:11 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "getErrors".' in D:\xampp\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\xampp\yii\framework\web\helpers\CHtml.php(1765): CComponent->__call('getErrors', Array)
+#1 D:\xampp\yii\framework\web\helpers\CHtml.php(1765): CActiveForm->getErrors()
+#2 D:\xampp\htdocs\notes\protected\views\login\login.php(17): CHtml::errorSummary(Object(CActiveForm))
+#3 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#4 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#7 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(41): CController->render('login', Array)
+#8 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#9 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/notes/
+---
+2015/01/23 09:18:00 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.request" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\yii\framework\web\auth\CWebUser.php(140): CComponent->__get('request')
+#1 D:\xampp\htdocs\notes\protected\controllers\LoginController.php(25): CWebUser->__get('request')
+#2 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#3 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/notes/
+---
+2015/01/23 09:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "note".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('note')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/note
+HTTP_REFERER=http://localhost/notes/index.php
+---
+2015/01/23 09:30:51 [error] [php] include(Note.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(42): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#2 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#4 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#7 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#10 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#11 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note
+2015/01/23 09:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 09:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 09:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 09:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+HTTP_REFERER=http://localhost/notes/index.php/note
+---
+2015/01/23 09:38:11 [error] [php] include(Post.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(52): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionCreate()
+#2 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#4 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#7 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#10 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#11 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/create
+2015/01/23 09:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 10:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 10:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 10:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\notes\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/notes/index.php/site/login
+---
+2015/01/23 10:10:59 [error] [php] include(TbDataColumn.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(92): spl_autoload_call()
+#1 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(358): TbGridView->createDataColumn()
+#2 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(75): TbGridView->initColumns()
+#3 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(334): TbGridView->initColumns()
+#4 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(44): TbGridView->init()
+#5 D:\xampp\yii\framework\web\CBaseController.php(147): TbGridView->init()
+#6 D:\xampp\yii\framework\web\CBaseController.php(172): NoteController->createWidget()
+#7 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#8 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#9 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#10 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#11 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#12 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#13 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#14 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#16 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#19 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#22 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#23 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:11:56 [error] [php] include(TbDataColumn.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(92): spl_autoload_call()
+#1 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(358): TbGridView->createDataColumn()
+#2 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(75): TbGridView->initColumns()
+#3 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(334): TbGridView->initColumns()
+#4 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(44): TbGridView->init()
+#5 D:\xampp\yii\framework\web\CBaseController.php(147): TbGridView->init()
+#6 D:\xampp\yii\framework\web\CBaseController.php(172): NoteController->createWidget()
+#7 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#8 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#9 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#10 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#11 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#12 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#13 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#14 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#16 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#19 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#22 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#23 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:12:41 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbPager.php(56): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(147): TbPager->init()
+#2 D:\xampp\yii\framework\web\CBaseController.php(172): TbGridView->createWidget()
+#3 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(268): TbGridView->widget()
+#4 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(160): TbGridView->renderPager()
+#5 unknown(0): TbGridView->renderSection()
+#6 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#7 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(128): TbGridView->renderContent()
+#8 D:\xampp\yii\framework\web\CBaseController.php(173): TbGridView->run()
+#9 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#10 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#11 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#12 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#13 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#14 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#15 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#16 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#18 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#21 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#24 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#25 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:13:13 [error] [php] include(TbDataColumn.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(92): spl_autoload_call()
+#1 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(358): TbGridView->createDataColumn()
+#2 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(75): TbGridView->initColumns()
+#3 D:\xampp\yii\framework\zii\widgets\grid\CGridView.php(334): TbGridView->initColumns()
+#4 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbGridView.php(44): TbGridView->init()
+#5 D:\xampp\yii\framework\web\CBaseController.php(147): TbGridView->init()
+#6 D:\xampp\yii\framework\web\CBaseController.php(172): NoteController->createWidget()
+#7 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#8 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#9 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#10 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#11 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#12 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#13 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#14 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#16 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#19 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#22 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#23 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:13:37 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbPager.php(56): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(147): TbPager->init()
+#2 D:\xampp\yii\framework\web\CBaseController.php(172): TbGridView->createWidget()
+#3 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(268): TbGridView->widget()
+#4 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(160): TbGridView->renderPager()
+#5 unknown(0): TbGridView->renderSection()
+#6 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#7 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(128): TbGridView->renderContent()
+#8 D:\xampp\yii\framework\web\CBaseController.php(173): TbGridView->run()
+#9 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#10 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#11 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#12 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#13 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#14 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#15 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#16 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#18 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#21 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#24 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#25 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:13:48 [error] [php] include(TbHtml.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\views\note\index.php(10): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#2 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#3 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#4 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#5 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#6 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#7 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#9 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#12 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#15 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:13:49 [error] [php] include(TbHtml.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\views\note\index.php(10): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#2 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#3 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#4 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#5 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#6 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#7 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#9 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#12 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#15 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:14:47 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbPager.php(56): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(147): TbPager->init()
+#2 D:\xampp\yii\framework\web\CBaseController.php(172): TbGridView->createWidget()
+#3 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(268): TbGridView->widget()
+#4 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(160): TbGridView->renderPager()
+#5 unknown(0): TbGridView->renderSection()
+#6 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#7 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(128): TbGridView->renderContent()
+#8 D:\xampp\yii\framework\web\CBaseController.php(173): TbGridView->run()
+#9 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#10 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#11 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#12 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#13 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#14 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#15 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#16 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#18 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#21 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#24 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#25 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:14:48 [error] [php] include(TbWidget.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\widgets\TbPager.php(56): spl_autoload_call()
+#1 D:\xampp\yii\framework\web\CBaseController.php(147): TbPager->init()
+#2 D:\xampp\yii\framework\web\CBaseController.php(172): TbGridView->createWidget()
+#3 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(268): TbGridView->widget()
+#4 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(160): TbGridView->renderPager()
+#5 unknown(0): TbGridView->renderSection()
+#6 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#7 D:\xampp\yii\framework\zii\widgets\CBaseListView.php(128): TbGridView->renderContent()
+#8 D:\xampp\yii\framework\web\CBaseController.php(173): TbGridView->run()
+#9 D:\xampp\htdocs\notes\protected\views\note\index.php(18): NoteController->widget()
+#10 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#11 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#12 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#13 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#14 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#15 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#16 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#18 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#21 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#24 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#25 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:18:15 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\helpers\TbHtml.php(2730): spl_autoload_call()
+#1 D:\xampp\htdocs\notes\protected\views\note\index.php(7): icon()
+#2 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#3 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#4 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#5 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#6 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#7 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#8 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#10 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#13 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#17 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/01/23 10:18:28 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\notes\protected\extensions\bootstrap\helpers\TbHtml.php(2730): spl_autoload_call()
+#1 D:\xampp\htdocs\notes\protected\views\note\index.php(7): icon()
+#2 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#3 D:\xampp\yii\framework\web\CBaseController.php(95): NoteController->renderInternal()
+#4 D:\xampp\yii\framework\web\CController.php(869): NoteController->renderFile()
+#5 D:\xampp\yii\framework\web\CController.php(782): NoteController->renderPartial()
+#6 D:\xampp\htdocs\notes\protected\controllers\NoteController.php(47): NoteController->render()
+#7 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): NoteController->actionIndex()
+#8 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): NoteController->runAction()
+#10 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\xampp\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): NoteController->filterAccessControl()
+#13 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\xampp\yii\framework\web\CController.php(265): NoteController->runActionWithFilters()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(282): NoteController->run()
+#17 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\notes\index.php(11): CWebApplication->run()
+REQUEST_URI=/notes/index.php/note/index
+2015/02/03 07:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 07:16:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 07:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 07:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 07:17:00 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'form-signup')
+#1 D:\xampp\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CActiveForm', Array)
+#2 D:\xampp\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 D:\xampp\htdocs\yiitest\protected\views\user\register.php(10): CBaseController->beginWidget('CActiveForm', Array)
+#4 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#8 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(24): CController->render('register', Array)
+#9 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#10 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#14 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#15 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/user/register
+---
+2015/02/03 07:17:31 [error] [exception.CException] exception 'CException' with message 'Property "User.password_confirmation" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('password_confir...')
+#1 D:\xampp\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('password_confir...')
+#2 D:\xampp\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'password_confir...')
+#3 D:\xampp\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'password_confir...', Array)
+#4 D:\xampp\yii\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(User), 'password_confir...', Array)
+#5 D:\xampp\htdocs\yiitest\protected\views\user\register.php(26): CActiveForm->textField(Object(User), 'password_confir...', Array)
+#6 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#10 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(24): CController->render('register', Array)
+#11 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#12 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#16 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#17 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/user/register
+---
+2015/02/03 07:27:30 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "password".' in D:\xampp\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\xampp\htdocs\yiitest\protected\views\user\register.php(27): CComponent->__call('password', Array)
+#1 D:\xampp\htdocs\yiitest\protected\views\user\register.php(27): CActiveForm->password(Object(User), 'password', Array)
+#2 D:\xampp\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#4 D:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#5 D:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#6 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(23): CController->render('register', Array)
+#7 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#8 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#12 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user/register
+---
+2015/02/03 07:33:48 [error] [php] include(email, unique.php): failed to open stream: No such file or directory (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\yii\framework\validators\CValidator.php(186): import()
+#1 D:\xampp\yii\framework\base\CModel.php(286): createValidator()
+#2 D:\xampp\yii\framework\base\CModel.php(260): User->createValidators()
+#3 D:\xampp\yii\framework\web\helpers\CHtml.php(1964): User->getValidators()
+#4 D:\xampp\yii\framework\web\helpers\CHtml.php(1257): activeInputField()
+#5 D:\xampp\yii\framework\web\widgets\CActiveForm.php(657): activeTextField()
+#6 D:\xampp\htdocs\yiitest\protected\views\user\register.php(17): CActiveForm->textField()
+#7 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#8 D:\xampp\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#9 D:\xampp\yii\framework\web\CController.php(869): UserController->renderFile()
+#10 D:\xampp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#11 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(25): UserController->render()
+#12 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#13 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\yii\framework\web\CController.php(286): UserController->runAction()
+#15 D:\xampp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\yiitest\index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+2015/02/03 07:34:07 [error] [php] include(email|unique.php): failed to open stream: Invalid argument (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\yii\framework\validators\CValidator.php(186): import()
+#1 D:\xampp\yii\framework\base\CModel.php(286): createValidator()
+#2 D:\xampp\yii\framework\base\CModel.php(260): User->createValidators()
+#3 D:\xampp\yii\framework\web\helpers\CHtml.php(1964): User->getValidators()
+#4 D:\xampp\yii\framework\web\helpers\CHtml.php(1257): activeInputField()
+#5 D:\xampp\yii\framework\web\widgets\CActiveForm.php(657): activeTextField()
+#6 D:\xampp\htdocs\yiitest\protected\views\user\register.php(17): CActiveForm->textField()
+#7 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#8 D:\xampp\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#9 D:\xampp\yii\framework\web\CController.php(869): UserController->renderFile()
+#10 D:\xampp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#11 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(25): UserController->render()
+#12 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#13 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\yii\framework\web\CController.php(286): UserController->runAction()
+#15 D:\xampp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\yiitest\index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+2015/02/03 07:34:10 [error] [php] include(email|unique.php): failed to open stream: Invalid argument (D:\xampp\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\yii\framework\validators\CValidator.php(186): import()
+#1 D:\xampp\yii\framework\base\CModel.php(286): createValidator()
+#2 D:\xampp\yii\framework\base\CModel.php(260): User->createValidators()
+#3 D:\xampp\yii\framework\web\helpers\CHtml.php(1964): User->getValidators()
+#4 D:\xampp\yii\framework\web\helpers\CHtml.php(1257): activeInputField()
+#5 D:\xampp\yii\framework\web\widgets\CActiveForm.php(657): activeTextField()
+#6 D:\xampp\htdocs\yiitest\protected\views\user\register.php(17): CActiveForm->textField()
+#7 D:\xampp\yii\framework\web\CBaseController.php(126): require()
+#8 D:\xampp\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#9 D:\xampp\yii\framework\web\CController.php(869): UserController->renderFile()
+#10 D:\xampp\yii\framework\web\CController.php(782): UserController->renderPartial()
+#11 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(25): UserController->render()
+#12 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#13 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\yii\framework\web\CController.php(286): UserController->runAction()
+#15 D:\xampp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#16 D:\xampp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#17 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\yiitest\index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/user/register
+2015/02/03 07:40:43 [warning] [application] Failed to set unsafe attribute "password" of "User".
+2015/02/03 07:40:48 [warning] [application] Failed to set unsafe attribute "password" of "User".
+2015/02/03 07:45:44 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('username')
+#1 D:\xampp\htdocs\yiitest\protected\models\User.php(39): CActiveRecord->__get('username')
+#2 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(38): User->login()
+#3 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#8 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#9 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://yii.dev/index.php/user/login
+---
+2015/02/03 07:46:14 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.email" is not defined.' in D:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yiitest\protected\components\UserIdentity.php(8): CComponent->__get('email')
+#1 D:\xampp\htdocs\yiitest\protected\models\User.php(40): UserIdentity->authenticate()
+#2 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(38): User->login()
+#3 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#8 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#9 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://yii.dev/index.php/user/login
+---
+2015/02/03 08:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/dashboard
+HTTP_REFERER=http://yii.dev/index.php/user/login
+---
+2015/02/03 08:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+HTTP_REFERER=http://yii.dev/index.php/user/dashboard
+---
+2015/02/03 08:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 08:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/02/03 08:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:40:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:42:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 08:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in D:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/login
+---
+2015/02/03 09:35:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:46:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginsdf".' in D:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\yii\framework\web\CController.php(270): CController->missingAction('loginsdf')
+#1 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('loginsdf')
+#2 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loginsdf')
+#3 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/loginsdf
+---
+2015/02/03 09:47:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'frameswork_test'' in D:\xampp\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\xampp\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\xampp\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\xampp\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\xampp\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\xampp\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\xampp\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\xampp\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(User))
+#7 D:\xampp\yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('User')
+#8 D:\xampp\yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#9 D:\xampp\htdocs\yiitest\protected\controllers\UserController.php(49): CActiveRecord->__construct('login')
+#10 D:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#11 D:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\xampp\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 D:\xampp\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 D:\xampp\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 D:\xampp\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 D:\xampp\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 D:\xampp\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 D:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#20 D:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 D:\xampp\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 D:\xampp\htdocs\yiitest\index.php(11): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://yii.dev/index.php/user/loginsdf
+---
